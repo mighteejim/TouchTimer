@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BAAEDFEC1E32A9AA00D5E8C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAEDFEB1E32A9AA00D5E8C4 /* AppDelegate.swift */; };
+		BAAEDFEE1E32A9AA00D5E8C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAEDFED1E32A9AA00D5E8C4 /* ViewController.swift */; };
+		BAAEDFF01E32A9AA00D5E8C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAAEDFEF1E32A9AA00D5E8C4 /* Assets.xcassets */; };
+		BAAEDFF31E32A9AA00D5E8C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAAEDFF11E32A9AA00D5E8C4 /* Main.storyboard */; };
+		BAAEDFFE1E32A9AA00D5E8C4 /* TouchTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAEDFFD1E32A9AA00D5E8C4 /* TouchTimerTests.swift */; };
+		BAAEE0091E32A9AA00D5E8C4 /* TouchTimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAEE0081E32A9AA00D5E8C4 /* TouchTimerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BAAEDFFA1E32A9AA00D5E8C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAAEDFE01E32A9AA00D5E8C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAAEDFE71E32A9AA00D5E8C4;
+			remoteInfo = TouchTimer;
+		};
+		BAAEE0051E32A9AA00D5E8C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAAEDFE01E32A9AA00D5E8C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAAEDFE71E32A9AA00D5E8C4;
+			remoteInfo = TouchTimer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BAAEDFE81E32A9AA00D5E8C4 /* TouchTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAAEDFEB1E32A9AA00D5E8C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BAAEDFED1E32A9AA00D5E8C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BAAEDFEF1E32A9AA00D5E8C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BAAEDFF21E32A9AA00D5E8C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BAAEDFF41E32A9AA00D5E8C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAAEDFF91E32A9AA00D5E8C4 /* TouchTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAAEDFFD1E32A9AA00D5E8C4 /* TouchTimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchTimerTests.swift; sourceTree = "<group>"; };
+		BAAEDFFF1E32A9AA00D5E8C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAAEE0041E32A9AA00D5E8C4 /* TouchTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAAEE0081E32A9AA00D5E8C4 /* TouchTimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchTimerUITests.swift; sourceTree = "<group>"; };
+		BAAEE00A1E32A9AA00D5E8C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BAAEDFE51E32A9AA00D5E8C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAAEDFF61E32A9AA00D5E8C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAAEE0011E32A9AA00D5E8C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BAAEDFDF1E32A9AA00D5E8C4 = {
+			isa = PBXGroup;
+			children = (
+				BAAEDFEA1E32A9AA00D5E8C4 /* TouchTimer */,
+				BAAEDFFC1E32A9AA00D5E8C4 /* TouchTimerTests */,
+				BAAEE0071E32A9AA00D5E8C4 /* TouchTimerUITests */,
+				BAAEDFE91E32A9AA00D5E8C4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BAAEDFE91E32A9AA00D5E8C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BAAEDFE81E32A9AA00D5E8C4 /* TouchTimer.app */,
+				BAAEDFF91E32A9AA00D5E8C4 /* TouchTimerTests.xctest */,
+				BAAEE0041E32A9AA00D5E8C4 /* TouchTimerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BAAEDFEA1E32A9AA00D5E8C4 /* TouchTimer */ = {
+			isa = PBXGroup;
+			children = (
+				BAAEDFEB1E32A9AA00D5E8C4 /* AppDelegate.swift */,
+				BAAEDFED1E32A9AA00D5E8C4 /* ViewController.swift */,
+				BAAEDFEF1E32A9AA00D5E8C4 /* Assets.xcassets */,
+				BAAEDFF11E32A9AA00D5E8C4 /* Main.storyboard */,
+				BAAEDFF41E32A9AA00D5E8C4 /* Info.plist */,
+			);
+			path = TouchTimer;
+			sourceTree = "<group>";
+		};
+		BAAEDFFC1E32A9AA00D5E8C4 /* TouchTimerTests */ = {
+			isa = PBXGroup;
+			children = (
+				BAAEDFFD1E32A9AA00D5E8C4 /* TouchTimerTests.swift */,
+				BAAEDFFF1E32A9AA00D5E8C4 /* Info.plist */,
+			);
+			path = TouchTimerTests;
+			sourceTree = "<group>";
+		};
+		BAAEE0071E32A9AA00D5E8C4 /* TouchTimerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BAAEE0081E32A9AA00D5E8C4 /* TouchTimerUITests.swift */,
+				BAAEE00A1E32A9AA00D5E8C4 /* Info.plist */,
+			);
+			path = TouchTimerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BAAEDFE71E32A9AA00D5E8C4 /* TouchTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAAEE00D1E32A9AA00D5E8C4 /* Build configuration list for PBXNativeTarget "TouchTimer" */;
+			buildPhases = (
+				BAAEDFE41E32A9AA00D5E8C4 /* Sources */,
+				BAAEDFE51E32A9AA00D5E8C4 /* Frameworks */,
+				BAAEDFE61E32A9AA00D5E8C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TouchTimer;
+			productName = TouchTimer;
+			productReference = BAAEDFE81E32A9AA00D5E8C4 /* TouchTimer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BAAEDFF81E32A9AA00D5E8C4 /* TouchTimerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAAEE0101E32A9AA00D5E8C4 /* Build configuration list for PBXNativeTarget "TouchTimerTests" */;
+			buildPhases = (
+				BAAEDFF51E32A9AA00D5E8C4 /* Sources */,
+				BAAEDFF61E32A9AA00D5E8C4 /* Frameworks */,
+				BAAEDFF71E32A9AA00D5E8C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAAEDFFB1E32A9AA00D5E8C4 /* PBXTargetDependency */,
+			);
+			name = TouchTimerTests;
+			productName = TouchTimerTests;
+			productReference = BAAEDFF91E32A9AA00D5E8C4 /* TouchTimerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BAAEE0031E32A9AA00D5E8C4 /* TouchTimerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAAEE0131E32A9AA00D5E8C4 /* Build configuration list for PBXNativeTarget "TouchTimerUITests" */;
+			buildPhases = (
+				BAAEE0001E32A9AA00D5E8C4 /* Sources */,
+				BAAEE0011E32A9AA00D5E8C4 /* Frameworks */,
+				BAAEE0021E32A9AA00D5E8C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAAEE0061E32A9AA00D5E8C4 /* PBXTargetDependency */,
+			);
+			name = TouchTimerUITests;
+			productName = TouchTimerUITests;
+			productReference = BAAEE0041E32A9AA00D5E8C4 /* TouchTimerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BAAEDFE01E32A9AA00D5E8C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = GormTech;
+				TargetAttributes = {
+					BAAEDFE71E32A9AA00D5E8C4 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = H9P3ZNS5B4;
+						ProvisioningStyle = Automatic;
+					};
+					BAAEDFF81E32A9AA00D5E8C4 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = H9P3ZNS5B4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BAAEDFE71E32A9AA00D5E8C4;
+					};
+					BAAEE0031E32A9AA00D5E8C4 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = H9P3ZNS5B4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BAAEDFE71E32A9AA00D5E8C4;
+					};
+				};
+			};
+			buildConfigurationList = BAAEDFE31E32A9AA00D5E8C4 /* Build configuration list for PBXProject "TouchTimer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BAAEDFDF1E32A9AA00D5E8C4;
+			productRefGroup = BAAEDFE91E32A9AA00D5E8C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BAAEDFE71E32A9AA00D5E8C4 /* TouchTimer */,
+				BAAEDFF81E32A9AA00D5E8C4 /* TouchTimerTests */,
+				BAAEE0031E32A9AA00D5E8C4 /* TouchTimerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BAAEDFE61E32A9AA00D5E8C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAAEDFF01E32A9AA00D5E8C4 /* Assets.xcassets in Resources */,
+				BAAEDFF31E32A9AA00D5E8C4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAAEDFF71E32A9AA00D5E8C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAAEE0021E32A9AA00D5E8C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BAAEDFE41E32A9AA00D5E8C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAAEDFEE1E32A9AA00D5E8C4 /* ViewController.swift in Sources */,
+				BAAEDFEC1E32A9AA00D5E8C4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAAEDFF51E32A9AA00D5E8C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAAEDFFE1E32A9AA00D5E8C4 /* TouchTimerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAAEE0001E32A9AA00D5E8C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAAEE0091E32A9AA00D5E8C4 /* TouchTimerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BAAEDFFB1E32A9AA00D5E8C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAAEDFE71E32A9AA00D5E8C4 /* TouchTimer */;
+			targetProxy = BAAEDFFA1E32A9AA00D5E8C4 /* PBXContainerItemProxy */;
+		};
+		BAAEE0061E32A9AA00D5E8C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAAEDFE71E32A9AA00D5E8C4 /* TouchTimer */;
+			targetProxy = BAAEE0051E32A9AA00D5E8C4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BAAEDFF11E32A9AA00D5E8C4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAAEDFF21E32A9AA00D5E8C4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BAAEE00B1E32A9AA00D5E8C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BAAEE00C1E32A9AA00D5E8C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		BAAEE00E1E32A9AA00D5E8C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = H9P3ZNS5B4;
+				INFOPLIST_FILE = TouchTimer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gormtech.TouchTimer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BAAEE00F1E32A9AA00D5E8C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = H9P3ZNS5B4;
+				INFOPLIST_FILE = TouchTimer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gormtech.TouchTimer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		BAAEE0111E32A9AA00D5E8C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = H9P3ZNS5B4;
+				INFOPLIST_FILE = TouchTimerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gormtech.TouchTimerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TouchTimer.app/Contents/MacOS/TouchTimer";
+			};
+			name = Debug;
+		};
+		BAAEE0121E32A9AA00D5E8C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = H9P3ZNS5B4;
+				INFOPLIST_FILE = TouchTimerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gormtech.TouchTimerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TouchTimer.app/Contents/MacOS/TouchTimer";
+			};
+			name = Release;
+		};
+		BAAEE0141E32A9AA00D5E8C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = H9P3ZNS5B4;
+				INFOPLIST_FILE = TouchTimerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gormtech.TouchTimerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TouchTimer;
+			};
+			name = Debug;
+		};
+		BAAEE0151E32A9AA00D5E8C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = H9P3ZNS5B4;
+				INFOPLIST_FILE = TouchTimerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gormtech.TouchTimerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TouchTimer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BAAEDFE31E32A9AA00D5E8C4 /* Build configuration list for PBXProject "TouchTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAAEE00B1E32A9AA00D5E8C4 /* Debug */,
+				BAAEE00C1E32A9AA00D5E8C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAAEE00D1E32A9AA00D5E8C4 /* Build configuration list for PBXNativeTarget "TouchTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAAEE00E1E32A9AA00D5E8C4 /* Debug */,
+				BAAEE00F1E32A9AA00D5E8C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BAAEE0101E32A9AA00D5E8C4 /* Build configuration list for PBXNativeTarget "TouchTimerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAAEE0111E32A9AA00D5E8C4 /* Debug */,
+				BAAEE0121E32A9AA00D5E8C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BAAEE0131E32A9AA00D5E8C4 /* Build configuration list for PBXNativeTarget "TouchTimerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAAEE0141E32A9AA00D5E8C4 /* Debug */,
+				BAAEE0151E32A9AA00D5E8C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BAAEDFE01E32A9AA00D5E8C4 /* Project object */;
+}
