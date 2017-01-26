@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaDFRPlugin" version="7104"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="the Touch Bar" message="Use a version of macOS with Touch Bar support." minToolsVersion="8.1" minSystemVersion="10.12.1" requiredIntegratedClassName="NSTouchBar"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -653,7 +657,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="TouchTimer" customModuleProvider="target"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="0.0"/>
@@ -661,33 +665,144 @@
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
-                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                <windowController id="B8D-0N-5wS" customClass="TouchTimerController" customModule="TouchTimer" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" title="TouchTimer" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
-                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <rect key="contentRect" x="196" y="240" width="261" height="107"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
+                        <value key="minSize" type="size" width="295" height="107"/>
+                        <value key="maxSize" type="size" width="295" height="107"/>
                     </window>
+                    <touchBar key="touchBar" id="Rm0-U8-p0n">
+                        <touchBarItems>
+                            <touchBarItem id="0G0-6A-fd7">
+                                <viewController key="viewController" id="SwT-Nm-wrM">
+                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="70s-mW-TuZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                                        <buttonCell key="cell" type="push" title="Stop" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ihk-rA-9bk">
+                                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" size="13" name=".SFNSText"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="stopTouchTimer:" target="B8D-0N-5wS" id="Y3k-cY-YQt"/>
+                                        </connections>
+                                    </button>
+                                </viewController>
+                            </touchBarItem>
+                            <touchBarItem id="Rdx-XE-4kx">
+                                <viewController key="viewController" id="TJp-Ni-C9v">
+                                    <textField key="view" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JuY-kL-MYK">
+                                        <rect key="frame" x="0.0" y="0.0" width="136" height="24"/>
+                                        <textFieldCell key="cell" borderStyle="bezel" alignment="center" title="Seconds Elapsed" drawsBackground="YES" id="3Nl-BP-4b1">
+                                            <font key="font" usesAppearanceFont="YES"/>
+                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </viewController>
+                                <size key="designTimeSize" width="136" height="24"/>
+                            </touchBarItem>
+                            <touchBarItem id="Rdo-Kt-XuT">
+                                <viewController key="viewController" id="5Uf-DD-nig">
+                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qbZ-Sa-lPM">
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="30"/>
+                                        <buttonCell key="cell" type="push" title="2 minutes" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1zM-89-hhL">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="twoMinuteTap:" target="B8D-0N-5wS" id="ElT-Y0-zzj"/>
+                                        </connections>
+                                    </button>
+                                </viewController>
+                                <size key="designTimeSize" width="90" height="30"/>
+                            </touchBarItem>
+                            <touchBarItem id="NtR-Hg-IqE">
+                                <viewController key="viewController" id="NrN-tj-aib">
+                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="UlF-Gu-CAH">
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="30"/>
+                                        <buttonCell key="cell" type="push" title="5 minutes" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Kcc-aU-HwG">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="fiveMinuteTap:" target="B8D-0N-5wS" id="R70-G6-EBH"/>
+                                        </connections>
+                                    </button>
+                                </viewController>
+                                <size key="designTimeSize" width="90" height="30"/>
+                            </touchBarItem>
+                            <touchBarItem id="oAn-cG-a9o">
+                                <viewController key="viewController" id="jfb-iO-MAF">
+                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0Yv-OS-1SO">
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="30"/>
+                                        <buttonCell key="cell" type="push" title="10 minutes" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="eMR-Gl-eQo">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="tenMinuteTap:" target="B8D-0N-5wS" id="NLd-Ds-QHa"/>
+                                        </connections>
+                                    </button>
+                                </viewController>
+                                <size key="designTimeSize" width="90" height="30"/>
+                            </touchBarItem>
+                        </touchBarItems>
+                    </touchBar>
                     <connections>
+                        <outlet property="touchTimerLabel" destination="JuY-kL-MYK" id="lYP-7U-eDI"/>
                         <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
                     </connections>
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="250"/>
+            <point key="canvasLocation" x="-29" y="245"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="TouchTimer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
-                        <autoresizingMask key="autoresizingMask"/>
+                        <rect key="frame" x="0.0" y="0.0" width="295" height="107"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3H3-n9-Iud">
+                                <rect key="frame" x="8" y="51" width="279" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="265" id="29j-Rv-vcC"/>
+                                    <constraint firstAttribute="height" constant="36" id="Ngx-kd-R1H"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Nothing to see here" id="YgE-CZ-od4">
+                                    <font key="font" metaFont="system" size="30"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vNX-aS-wjp">
+                                <rect key="frame" x="49" y="26" width="196" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="192" id="JxB-fl-tqA"/>
+                                    <constraint firstAttribute="height" constant="17" id="dV9-TG-bcG"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Use the TouchBar, dumb dumb!" id="dKb-Tb-U3T">
+                                    <font key="font" size="13" name=".SFNSText"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="3H3-n9-Iud" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" constant="5" id="HSh-OO-7tG"/>
+                            <constraint firstItem="3H3-n9-Iud" firstAttribute="centerX" secondItem="vNX-aS-wjp" secondAttribute="centerX" id="JjN-0S-QxN"/>
+                            <constraint firstAttribute="bottom" secondItem="vNX-aS-wjp" secondAttribute="bottom" constant="20" symbolic="YES" id="TDc-kj-iR8"/>
+                            <constraint firstItem="vNX-aS-wjp" firstAttribute="top" secondItem="3H3-n9-Iud" secondAttribute="bottom" constant="8" symbolic="YES" id="ayd-Np-Iwf"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="-18.5" y="450.5"/>
         </scene>
     </scenes>
 </document>

@@ -13,6 +13,7 @@
 		BAAEDFF31E32A9AA00D5E8C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAAEDFF11E32A9AA00D5E8C4 /* Main.storyboard */; };
 		BAAEDFFE1E32A9AA00D5E8C4 /* TouchTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAEDFFD1E32A9AA00D5E8C4 /* TouchTimerTests.swift */; };
 		BAAEE0091E32A9AA00D5E8C4 /* TouchTimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAEE0081E32A9AA00D5E8C4 /* TouchTimerUITests.swift */; };
+		BAAEE0171E32AC6700D5E8C4 /* TouchTimerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAEE0161E32AC6700D5E8C4 /* TouchTimerController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		BAAEE0041E32A9AA00D5E8C4 /* TouchTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAAEE0081E32A9AA00D5E8C4 /* TouchTimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchTimerUITests.swift; sourceTree = "<group>"; };
 		BAAEE00A1E32A9AA00D5E8C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAAEE0161E32AC6700D5E8C4 /* TouchTimerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchTimerController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				BAAEDFEB1E32A9AA00D5E8C4 /* AppDelegate.swift */,
+				BAAEE0161E32AC6700D5E8C4 /* TouchTimerController.swift */,
 				BAAEDFED1E32A9AA00D5E8C4 /* ViewController.swift */,
 				BAAEDFEF1E32A9AA00D5E8C4 /* Assets.xcassets */,
 				BAAEDFF11E32A9AA00D5E8C4 /* Main.storyboard */,
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAAEE0171E32AC6700D5E8C4 /* TouchTimerController.swift in Sources */,
 				BAAEDFEE1E32A9AA00D5E8C4 /* ViewController.swift in Sources */,
 				BAAEDFEC1E32A9AA00D5E8C4 /* AppDelegate.swift in Sources */,
 			);
@@ -400,6 +404,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = H9P3ZNS5B4;
 				INFOPLIST_FILE = TouchTimer/Info.plist;
@@ -414,6 +419,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = H9P3ZNS5B4;
 				INFOPLIST_FILE = TouchTimer/Info.plist;
@@ -505,6 +511,7 @@
 				BAAEE00F1E32A9AA00D5E8C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BAAEE0101E32A9AA00D5E8C4 /* Build configuration list for PBXNativeTarget "TouchTimerTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +520,7 @@
 				BAAEE0121E32A9AA00D5E8C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BAAEE0131E32A9AA00D5E8C4 /* Build configuration list for PBXNativeTarget "TouchTimerUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +529,7 @@
 				BAAEE0151E32A9AA00D5E8C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
